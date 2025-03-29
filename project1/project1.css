@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.header{
+	background-color: rgb(85, 80, 80);
+	color: aliceblue;
+	font-size: 1.0rem;
+	font-weight: 500;
+	display: flex;
+	text-align: center;
+	height: 80px;
+	align-items: center;
+	
+}
+.Name{
+	margin-left: 6rem;
+}
+.navbar{
+	margin-left: 6rem;
+	display:flex;
+	align-items: center;
+	
+}
+
+.home{
+	margin: 30px;
+	cursor: pointer;
+}
+.home:hover{
+	color:rgb(151, 134, 134);
+}
+.About{
+	margin: 30px;
+	cursor: pointer;
+
+}
+.About:hover{
+	color:rgb(151, 134, 134);
+}
+
+.Skills{
+	margin: 30px;
+	cursor: pointer;
+}
+.Skills:hover{
+	color:rgb(151, 134, 134);
+}
+.project{
+	margin: 30px;
+	cursor: pointer;
+}
+.project:hover{
+	color:rgb(151, 134, 134);
+}
+.Contact{
+	margin: 18rem;
+	
+}
+.Contact button{
+	background-color: rgb(151, 134, 134);
+	font-size: 1rem;
+	border:none;
+	border-radius: 6px;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.Contact button:hover{
+	background-color:  rgb(95, 90, 90);
+	color: white;
+}
+
+.home-section{
+	min-height: 100vh;
+	padding: 20px 10%;
+	margin-top: 150px;
+}
+
+.home-section h1{
+	font-size: 56px;
+	font-weight: 500;
+}
+
+.home-section h2{
+	font-size: 29px;
+	font-weight: 200;
+}
+.home-section p{
+	font-size: 16px;
+	margin-top: 20px;
+}
+.home1{
+	
+	background: rgb(241,241,241);
+	display: flex;
+	align-items: center;
+	
+	
+}
+
+
+.img-box img{
+	border-radius: 50%;
+	width: 260px;
+	display: flex;
+	margin-bottom: 390px;
+}
+
+.about{
+	background-color: rgb(43, 35, 35);
+	display: flex;
+}
+.about p{
+	color: whitesmoke;
+	font-size: 1.2rem;
+	margin-top: 60px;
+	margin-left: 12px;
+}
+.about br{
+	margin-top: 20px;
+}
+.about video{
+	background-color: rgb(32, 30, 30);
+	margin-top: 1rem;
+	margin-left: 2rem;
+	width: 100vh;
+	height: 70vh;
+	cursor: pointer;
+}
+
+.skill{
+	background-color: rgb(51, 51, 42);
+	display: flex;
+	text-align: center;
+	margin-top: 40px;
+	height: 320px;
+}
+
+.skill img{
+	border-radius: 18px;
+	width: 50%;
+	
+}
+
+.skill h3{
+	color: whitesmoke;
+}
+
+.box-1{
+	border: 2px solid rgb(233, 198, 198);
+	height: 90%;
+	width: 500px;
+	margin-top: 18px;
+	margin-left: 22px;
+	margin-right: 22px;
+	align-items: center;
+	display: flex;
+}
+
+.container{
+	border: 2px solid gainsboro;
+	margin: 2.8rem;
+	background-color: rgb(42, 44, 44);
+	text-align: center;
+	color: white;
+	border:2px solid blue;
+}
+.container h2{
+	margin:22px;
+}
+
+.container h3,a,p{
+	margin: 15px;
+}
+.container h3{
+	font-weight: 400;
+}
+.container a{
+	color: aqua;
+}
+
+.contact{
+	background-color: rgb(56, 51, 51);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border:2px solid rgb(145, 135, 135);
+	
+}
+
+.contact h2{
+	color: white;
+	font-size: 2.9rem;
+}
+
+input{
+	font-size: 20px;
+	display: flex;
+	border-radius: 2px;
+	
+}
+
+.contact p{
+	color: white;
+	font-size: 1.5rem;
+}
