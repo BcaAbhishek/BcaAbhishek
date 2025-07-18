@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emotional Journal</title>
+  <link rel="stylesheet" href="feeling.css">
+</head>
+
+<body>
+
+  <video autoplay muted loop id="bgVideo">
+    <source src="75744-556672076_medium.mp4" type="video/mp4" />
+   
+  </video>
+
+
+  <div id="videoOverlay"></div>
+
+
+  <h1>Share Your Feelings and Emotions</h1>
+  <p>Write your feelings and let others see and support you ❤️</p>
+
+  <select id="moodSelect">
+    <option value="😊">😊 Happy</option>
+    <option value="😢">😢 Sad</option>
+    <option value="😠">😠 Angry</option>
+    <option value="😌">😌 Calm</option>
+    <option value="😕">😕 Confused</option>
+  </select>
+
+  <textarea id="emotionInput" placeholder="How are you feeling today?" maxlength="1000"></textarea>
+  <div id="charCount">0/1000</div>
+
+  <button onclick="submitEmotion()">Submit</button>
+  <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+  <div id="entriesContainer"></div>
+
+  <script src="feeling.js"></script>
+</body>
+</html>

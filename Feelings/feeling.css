@@ -1,0 +1,116 @@
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+#videoOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: -1;
+}
+
+
+h1, p, select, textarea, button, #charCount, #entriesContainer {
+  position: relative;
+  z-index: 1;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f7f9fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+p{
+  color: whitesmoke;
+}
+
+textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  padding: 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+  background: transparent;
+}
+
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 5px 15px 0;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+
+
+
+select {
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#charCount {
+  margin-bottom: 10px;
+  color: whitesmoke;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .entry {
+  background-color: #2e2e2e;
+  border-left-color: #f4ecfe;
+}
+
+@media (max-width: 600px) {
+  textarea {
+    width: 100%;
+  }
+}
+
+
+
+#entriesContainer{
+  color: #f7f9fc;
+}
+
+
+
+
+
+
+
