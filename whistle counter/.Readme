@@ -1,0 +1,7 @@
+First You have to instrall python latest version 
+after that just copy past this command in terminal
+
+1-python -m pip install --upgrade pip setuptools wheel
+pip install "kivy[base]" kivy_deps.sdl2 kivy_deps.glew kivy_deps.angle kivy_deps.gstreamer
+2-pip install sounddevice numpy
+3-python main.py
