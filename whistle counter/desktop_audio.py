@@ -1,67 +1,4 @@
-# import threading, time
-# import numpy as np
-# import sounddevice as sd
 
-# class DesktopAudioListener:
-#     def __init__(self, sample_rate=44100, chunk=2048, threshold=0.02, cooldown=3.0):
-#         self.sample_rate = sample_rate
-#         self.chunk = chunk
-#         self.threshold = threshold
-#         self.cooldown = cooldown
-#         self._running = False
-#         self._last = 0.0
-#         self.device = self._find_input_device()
-
-#     def _find_input_device(self):
-#         """Auto-select a microphone with input channels"""
-#         devices = sd.query_devices()
-#         for i, dev in enumerate(devices):
-#             if dev['max_input_channels'] > 0:
-#                 print(f"[INFO] Using input device {i}: {dev['name']}")
-#                 return i
-#         raise RuntimeError("No microphone input devices found!")
-
-#     def start(self, on_whistle, on_volume=None):
-#         if self._running:
-#             return
-#         self._running = True
-
-#         def _loop():
-#             while self._running:
-#                 try:
-#                     data = sd.rec(
-#                         self.chunk,
-#                         samplerate=self.sample_rate,
-#                         channels=1,
-#                         dtype='float32',
-#                         device=self.device
-#                     )
-#                     sd.wait()
-#                     rms = float(np.sqrt(np.mean(data**2)))
-
-#                     # 🔊 send live volume level
-#                     if on_volume:
-#                         try:
-#                             on_volume(rms)
-#                         except:
-#                             pass
-
-#                     if rms > self.threshold and (time.time() - self._last) > self.cooldown:
-#                         self._last = time.time()
-#                         try:
-#                             on_whistle()
-#                         except Exception:
-#                             pass
-#                 except Exception as e:
-#                     print("[ERROR] Mic capture failed:", e)
-#                 time.sleep(0.01)
-
-#         t = threading.Thread(target=_loop, daemon=True)
-#         t.start()
-
-#     def stop(self):
-#         self._running = False
-# desktop_audio.py
 import threading
 import time
 import numpy as np
@@ -201,3 +138,4 @@ class DesktopAudioListener:
 
     def stop(self):
         self._running = False
+
